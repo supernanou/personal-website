@@ -430,6 +430,68 @@ body {
 .secret-icon { top: 45%; right: 3%; transform: scale(.84); opacity: .75; }
 .secret-icon:hover { transform: scale(.9); opacity: 1; }
 
+.education-list{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.education-item{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:22px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px dashed #c8b6ae;
+}
+
+.education-item:last-child{
+    border-bottom:none;
+}
+
+.education-year{
+
+    color:#8d6d67;
+
+    font-family:"VT323", monospace;
+    font-size:24px;
+}
+
+.education-content h3{
+
+    margin:0;
+
+    font-size:24px;
+
+    color:#3a2d2a;
+}
+
+.education-content h4{
+
+    margin:6px 0 15px;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    color:#8c6e67;
+}
+
+.education-content ul{
+
+    margin:0;
+
+    padding-left:18px;
+
+    line-height:1.8;
+}
+
+.education-content li{
+
+    margin-bottom:4px;
+}
+
 .polaroid {
   position: absolute;
   z-index: 3;
