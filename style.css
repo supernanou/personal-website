@@ -662,34 +662,49 @@ body {
   background: #fff9f4;
 }
 
+#about {
+  width: min(720px, 92vw);
+}
+
+#about .window-body {
+  padding: 26px 30px 30px;
+}
+
 .about-layout {
   display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 165px minmax(0, 1fr);
+  gap: 34px;
   align-items: start;
+}
+
+.about-layout > div:last-child {
+  min-width: 0;
 }
 
 .profile-card {
   position: relative;
-  width: 150px;
-  padding: 9px 9px 14px;
+  align-self: start;
+  width: 155px;
+  height: max-content;
+  padding: 10px 10px 15px;
   text-align: center;
   background: #fff;
   box-shadow: 5px 6px 0 #b9a7a0;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
 }
 
 .profile-card::before {
   content: "📎";
   position: absolute;
-  top: -13px;
-  right: 9px;
+  top: -14px;
+  right: 8px;
   z-index: 2;
   font-size: 20px;
-  transform: rotate(20deg);
+  transform: rotate(18deg);
 }
 
 .profile-image {
+  width: 100%;
   height: 128px;
   display: grid;
   place-items: center;
@@ -699,42 +714,50 @@ body {
   background: linear-gradient(135deg, #d9c4bc, #b69388);
 }
 
-.profile-card span {
-  display: block;
-  margin-top: 8px;
-  overflow-wrap: anywhere;
-  font-family: "VT323", monospace;
-  font-size: 17px;
-}
-
 .real-profile-image {
-  width: 128px;
-  height: 128px;
+  width: 135px;
+  height: 135px;
   display: block;
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
-  border: 3px solid white;
+  border: 0;
   border-radius: 2px;
 }
 
+.profile-card span {
+  display: block;
+  margin-top: 9px;
+  overflow-wrap: anywhere;
+  font-family: "VT323", monospace;
+  font-size: 17px;
+  line-height: 1;
+}
+
 .photo-note {
-  margin-top: 6px;
+  margin: 6px 0 0;
   color: #7a6c67;
   font-size: 13px;
   font-style: italic;
 }
 
-.about-layout > div:last-child {
-  min-width: 0;
-}
-
 .about-layout .file-path {
   width: 100%;
+  margin-bottom: 18px !important;
 }
 
 .about-layout h2 {
-  margin-top: 0;
+  margin: 0 0 14px;
+  line-height: 1.05;
+}
+
+.about-layout p:not(.file-path) {
+  margin: 0 0 14px;
+}
+
+.about-layout .status-line {
+  max-width: 100%;
+  margin-top: 4px;
 }
 
 .status-line {
@@ -1246,20 +1269,28 @@ body {
     padding: 19px;
   }
 
-  .about-layout,
   .folder-grid,
   .project-grid,
   .social-grid {
     grid-template-columns: 1fr;
   }
 
+  #about {
+    width: auto !important;
+  }
+
+  #about .window-body {
+    padding: 19px;
+  }
+
   .about-layout {
     grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .profile-card {
-    width: 150px;
-    margin: 0 auto 20px;
+    width: 155px;
+    margin: 0 auto;
   }
 
   .project-card {
