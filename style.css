@@ -664,85 +664,77 @@ body {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 155px 1fr;
+  grid-template-columns: 160px minmax(0, 1fr);
   gap: 24px;
+  align-items: start;
 }
 
 .profile-card {
-    position: relative;
-
-    width: 180px;
-
-    padding: 12px 12px 18px;
-
-    text-align: center;
-
-    background: #fff;
-
-    box-shadow: 5px 6px 0 #b9a7a0;
-    transform: rotate(-2deg);
+  position: relative;
+  width: 150px;
+  padding: 9px 9px 14px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 5px 6px 0 #b9a7a0;
+  transform: rotate(-2deg);
 }
 
-/* Optional paperclip */
 .profile-card::before {
-    content: "📎";
-
-    position: absolute;
-
-    top: -14px;
-    right: 12px;
-
-    font-size: 22px;
-
-    transform: rotate(20deg);
+  content: "📎";
+  position: absolute;
+  top: -13px;
+  right: 9px;
+  z-index: 2;
+  font-size: 20px;
+  transform: rotate(20deg);
 }
 
 .profile-image {
-    height: 150px;
-
-    display: grid;
-    place-items: center;
-
-    color: #8c6e67;
-
-    font-family: "VT323", monospace;
-    font-size: 24px;
-
-    background: linear-gradient(135deg, #d9c4bc, #b69388);
+  height: 128px;
+  display: grid;
+  place-items: center;
+  color: #8c6e67;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  background: linear-gradient(135deg, #d9c4bc, #b69388);
 }
 
 .profile-card span {
-    display: block;
-
-    margin-top: 10px;
-
-    font-family: "VT323", monospace;
-    font-size: 18px;
+  display: block;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+  font-family: "VT323", monospace;
+  font-size: 17px;
 }
 
 .real-profile-image {
-    width: 145px;
-    height: 145px;
-
-    display: block;
-    margin: 0 auto;
-
-    object-fit: cover;
-    object-position: center;
-
-    border: 6px solid white;
-    border-radius: 3px;
-
-    box-shadow: 0 6px 14px rgba(0,0,0,.22);
+  width: 128px;
+  height: 128px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid white;
+  border-radius: 2px;
 }
 
 .photo-note {
-    margin-top: 6px;
+  margin-top: 6px;
+  color: #7a6c67;
+  font-size: 13px;
+  font-style: italic;
+}
 
-    color: #7a6c67;
+.about-layout > div:last-child {
+  min-width: 0;
+}
 
-    font-size: 13px;
-    font-style: italic;
+.about-layout .file-path {
+  width: 100%;
+}
+
+.about-layout h2 {
+  margin-top: 0;
 }
 
 .status-line {
@@ -769,6 +761,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 13px;
+}
+
+.folder-grid > .education-list {
+  grid-column: 1 / -1;
 }
 
 .info-card,
@@ -1257,9 +1253,13 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
   .profile-card {
-    width: 170px;
-    margin: 0 auto;
+    width: 150px;
+    margin: 0 auto 20px;
   }
 
   .project-card {
