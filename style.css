@@ -175,34 +175,6 @@ body {
   background: rgba(255,255,255,.75);
 }
 
-.top-nav {
-  position: absolute;
-  top: 67px;
-  left: 50%;
-  z-index: 20;
-  display: flex;
-  gap: 10px;
-  transform: translateX(-50%);
-}
-
-.top-nav button {
-  padding: 7px 18px;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid rgba(255,255,255,.88);
-  border-radius: 999px;
-  background: rgba(108,76,68,.2);
-  box-shadow: 0 7px 20px rgba(31,20,18,.12);
-  backdrop-filter: blur(9px);
-  transition: .18s ease;
-}
-
-.top-nav button:hover {
-  color: var(--ink);
-  background: rgba(255,255,255,.88);
-  transform: translateY(-2px);
-}
-
 .welcome-card {
   position: absolute;
   top: 118px;
@@ -1130,17 +1102,6 @@ body {
     display: none;
   }
 
-  .top-nav {
-    top: 50px;
-    width: 96%;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .top-nav button {
-    padding: 6px 9px;
-    font-size: 11px;
-  }
 
   .welcome-card {
     top: 95px;
