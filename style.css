@@ -1311,3 +1311,88 @@ body {
     padding: 0 7px;
   }
 }
+
+/* ===========================
+   TERMINAL
+=========================== */
+
+.terminal{
+    background:#1e1e1e;
+    border:2px solid #505050;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:4px 4px 0 rgba(0,0,0,.15);
+    margin-top:20px;
+}
+
+.terminal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#353535;
+    padding:10px 15px;
+    border-bottom:1px solid #4c4c4c;
+}
+
+.terminal-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.btn{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.btn.red{
+    background:#ff5f57;
+}
+
+.btn.yellow{
+    background:#febc2e;
+}
+
+.btn.green{
+    background:#28c840;
+}
+
+.terminal-title{
+    color:#d9d9d9;
+    font-family:"VT323", monospace;
+    font-size:20px;
+}
+
+.terminal-body{
+    padding:20px;
+    overflow-x:auto;
+}
+
+.terminal pre{
+    margin:0;
+    font-family:"VT323", monospace;
+    font-size:24px;
+    line-height:1.45;
+    color:#d4d4d4;
+    white-space:pre;
+}
+
+.prompt{
+    color:#61ff6b;
+}
+
+.year{
+    color:#7cc7ff;
+    font-weight:bold;
+}
+
+.cursor{
+    color:#ffffff;
+    animation:blink 1s steps(1) infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
