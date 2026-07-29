@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonia's Desktop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="desktop">
+    <header class="browser-bar">
+      <div class="traffic-lights" aria-hidden="true">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+
+      <div class="address-bar">antonia.local</div>
+
+      <div class="browser-buttons" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="intro">
+      <p>Welcome to</p>
+      <h1>Antonia's Desktop</h1>
+      <span>Click a file to explore my world.</span>
+    </section>
+
+    <section class="desktop-icons" aria-label="Desktop folders">
+      <a class="desktop-icon icon-about" href="#about">
+        <span class="icon-image">👩🏻‍💻</span>
+        <span class="icon-label">About_Me.txt</span>
+      </a>
+
+      <a class="desktop-icon icon-education" href="#education">
+        <span class="icon-image">🎓</span>
+        <span class="icon-label">Education</span>
+      </a>
+
+      <a class="desktop-icon icon-work" href="#work">
+        <span class="icon-image">💼</span>
+        <span class="icon-label">Work.exe</span>
+      </a>
+
+      <a class="desktop-icon icon-projects" href="#projects">
+        <span class="icon-image">🎮</span>
+        <span class="icon-label">Projects</span>
+      </a>
+
+      <a class="desktop-icon icon-hobbies" href="#hobbies">
+        <span class="icon-image">🎨</span>
+        <span class="icon-label">Hobbies.jpg</span>
+      </a>
+
+      <a class="desktop-icon icon-content" href="#content">
+        <span class="icon-image">📹</span>
+        <span class="icon-label">Content.mov</span>
+      </a>
+
+      <a class="desktop-icon icon-contact" href="#contact">
+        <span class="icon-image">✉️</span>
+        <span class="icon-label">Contact.mail</span>
+      </a>
+    </section>
+
+    <footer class="taskbar">
+      <div class="start-button">Start</div>
+      <div class="taskbar-title">Antonia's personal website</div>
+      <div class="clock">12:32</div>
+    </footer>
+  </main>
+
+  <!-- CSS-only popup windows -->
+
+  <section id="about" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>About_Me.txt</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Hello, I'm Antonia 👋</h2>
+        <p>
+          I am a game developer, coding educator, designer and content creator
+          based in Cyprus.
+        </p>
+        <p>
+          I love creating digital experiences, teaching technology and turning
+          creative ideas into real projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Education.folder</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Education</h2>
+        <article class="card">
+          <h3>MA in Journalism & New Communication</h3>
+          <p>Open University of Cyprus</p>
+        </article>
+        <article class="card">
+          <h3>MA in Technology & Primary Education</h3>
+          <p>University of Cyprus</p>
+        </article>
+        <article class="card">
+          <h3>Certifications</h3>
+          <p>Minecraft Education Ambassador and coding education training.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Work.exe</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Work</h2>
+        <article class="card">
+          <h3>Game Development</h3>
+          <p>Leading and contributing to interactive game projects.</p>
+        </article>
+        <article class="card">
+          <h3>Coding Education</h3>
+          <p>Teaching Python, Scratch, Roblox, Minecraft, web development and 3D design.</p>
+        </article>
+        <article class="card">
+          <h3>Content Creation</h3>
+          <p>Creating technology, workspace and developer content for social platforms.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Projects.folder</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+          <article class="card">
+            <h3>Cuprum 2929</h3>
+            <p>An atmospheric adventure game created in Unreal Engine.</p>
+          </article>
+          <article class="card">
+            <h3>Spherelimina</h3>
+            <p>A colourful competitive arena game with spheres and power-ups.</p>
+          </article>
+          <article class="card">
+            <h3>Student Projects</h3>
+            <p>Creative coding, websites, games and interactive learning experiences.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Hobbies.jpg</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Things I Love</h2>
+        <div class="tag-list">
+          <span>Gaming</span>
+          <span>Mechanical keyboards</span>
+          <span>Drawing</span>
+          <span>3D design</span>
+          <span>Technology</span>
+          <span>Photography</span>
+          <span>My dog</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="content" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Content.mov</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Content & Social Media</h2>
+        <p>I create content about coding, desk setups, technology, gaming and creative work.</p>
+
+        <div class="social-links">
+          <a href="#" target="_blank">X / Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">TikTok</a>
+          <a href="#" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="popup">
+    <div class="window">
+      <div class="window-title">
+        <span>Contact.mail</span>
+        <a href="#" aria-label="Close">×</a>
+      </div>
+      <div class="window-content">
+        <h2>Let's Connect</h2>
+        <p>For collaborations, teaching opportunities or creative projects:</p>
+
+        <a class="email-button" href="mailto:hello@example.com">
+          Send me an email
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
