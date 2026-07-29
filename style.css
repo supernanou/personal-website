@@ -904,39 +904,45 @@ body {
   box-shadow: 3px 3px 0 #b09c94;
 }
 
-.social-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 18px;
+.social-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    margin-top:20px;
 }
 
-.social-grid a {
-  display: grid;
-  grid-template-columns: 42px 1fr;
-  align-items: center;
-  padding: 13px;
-  color: var(--ink);
-  text-decoration: none;
-  border: 1px solid #a99690;
-  background: #fff8f3;
-  box-shadow: 3px 3px 0 #b4a19a;
-  transition: .15s ease;
+.social-grid a{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:16px;
+    text-decoration:none;
+    color:var(--ink);
+    background:#fff8f3;
+    border:1px solid #b6a39b;
+    box-shadow:4px 4px 0 #b9a49d;
+    transition:.2s;
 }
 
-.social-grid a:hover {
-  transform: translate(-2px,-2px);
-  box-shadow: 5px 5px 0 #a38e87;
+.social-grid a:hover{
+    transform:translate(-3px,-3px);
+    box-shadow:7px 7px 0 #a58d86;
 }
 
-.social-grid span {
-  grid-row: 1 / span 2;
-  font-family: "VT323", monospace;
-  font-size: 30px;
+.social-logo{
+    width:34px;
+    height:34px;
+    flex-shrink:0;
 }
 
-.social-grid small {
-  color: #7f6f69;
+.social-grid strong{
+    display:block;
+    font-size:16px;
+}
+
+.social-grid small{
+    color:#786864;
+    font-size:13px;
 }
 
 .contact-form {
